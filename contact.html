@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Request Survey | Reliable Land Survey Consultancy</title>
+  <meta name="description"
+    content="Contact Reliable Land Survey Consultancy in Pune, Maharashtra. Request a survey consultation for highways, metro rail, railway, and LiDAR drone mapping.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header header-light" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Reliable Land Survey Consultancy Home">
+        <img src="assets/images/new_logo.png" alt="Reliable Land Survey Consultancy Logo" class="logo-img">
+      </a>
+      <nav class="nav-menu" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services <span class="nav-badge">9</span></a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="btn btn-accent mobile-cta-btn">Request a Survey</a>
+      </nav>
+
+
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-accent header-cta">Request a Survey</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section
+    style="padding-top: calc(var(--header-height) + 3rem); padding-bottom: 4rem; background: var(--bg-surface); color: #ffffff; border-bottom: 1px solid var(--border-dark);">
+    <div class="container">
+      <span class="section-tag dark">11 | CONTACT &amp; ENQUIRY</span>
+      <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 1rem; color: #ffffff;">Contact Our Survey Team
+      </h1>
+      <p style="font-size: 1.15rem; color: #94a3b8; max-width: 760px; line-height: 1.7;">
+        Submit your project specifications, corridor requirements, or tender credentials inquiry. Our surveying
+        engineers will review your request.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Grid -->
+  <section style="padding: 5.5rem 0; background: #ffffff;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info Column -->
+        <div class="contact-info-panel">
+          <span class="section-tag dark">COMPANY INFORMATION</span>
+          <h2 class="contact-info-title">Reliable Land Survey Consultancy</h2>
+          <p class="contact-info-desc">
+            Professional land surveying, geospatial, drone mapping, and infrastructure survey solutions based in Pune,
+            Maharashtra.
+          </p>
+
+          <div class="info-item">
+            <div class="info-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div>
+              <div class="info-item-label">Proprietor</div>
+              <div class="info-item-value">MAHESH DESHMUKH</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <div class="info-item-label">Office &amp; Headquarters</div>
+              <div class="info-item-value">Pune, Maharashtra</div>
+              <div class="info-placeholder-note">Contact us for office address and appointment scheduling</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <div>
+              <div class="info-item-label">Registration &amp; Tender Docs</div>
+              <div class="info-item-value">Contact us for details</div>
+              <div class="info-placeholder-note">GST / PAN / Registration details provided on tender requirement</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <div class="info-item-label">Phone &amp; Direct Line</div>
+              <div class="info-item-value">Contact us for details</div>
+              <div class="info-placeholder-note">Direct engineering contacts shared on enquiry submission</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(148, 163, 184, 0.15);">
+            <button id="view-demo-enquiries-btn" class="btn btn-tech" style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
+              View Stored Enquiries (LocalStorage Demo)
+            </button>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-panel">
+          <h3 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 0.5rem;">Survey Request &amp; Tender Inquiry
+          </h3>
+          <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 2rem;">
+            Fill in the required fields below. We will calculate estimated field mobilization times and sensor
+            suitability for your site.
+          </p>
+
+          <form id="survey-enquiry-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Rajesh Patil" required
+                  autocomplete="name">
+                <div class="form-feedback" id="fullName-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="companyName" class="form-label">Company / Organization <span
+                    class="required">*</span></label>
+                <input type="text" id="companyName" class="form-control" placeholder="e.g. Infrastructure EPC Pvt Ltd"
+                  required autocomplete="organization">
+                <div class="form-feedback" id="companyName-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Business Email <span class="required">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="name@company.com" required
+                  autocomplete="email">
+                <div class="form-feedback" id="email-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210" required
+                  autocomplete="tel">
+                <div class="form-feedback" id="phone-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectType" class="form-label">Project Type <span class="required">*</span></label>
+                <input type="text" id="projectType" class="form-control"
+                  placeholder="e.g. Metro Rail / National Highway" required>
+                <div class="form-feedback" id="projectType-feedback"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectLocation" class="form-label">Project Location <span class="required">*</span></label>
+                <input type="text" id="projectLocation" class="form-control"
+                  placeholder="e.g. Pune, PCMC, or Corridor Chainage" required>
+                <div class="form-feedback" id="projectLocation-feedback"></div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="requiredService" class="form-label">Required Service <span class="required">*</span></label>
+                <select id="requiredService" class="form-control" required>
+                  <option value="">-- Select Required Service --</option>
+                  <option value="Topographical Survey">Topographical Survey</option>
+                  <option value="DGPS / GNSS">DGPS / GNSS</option>
+                  <option value="Total Station">Total Station</option>
+                  <option value="RTK Drone Survey">RTK Drone Survey</option>
+                  <option value="LiDAR Drone Survey">LiDAR Drone Survey</option>
+                  <option value="Drone Photogrammetry">Drone Photogrammetry</option>
+                  <option value="Road / Highway Survey">Road / Highway Survey</option>
+                  <option value="Railway / Metro Survey">Railway / Metro Survey</option>
+                  <option value="CAD / GIS">CAD / GIS</option>
+                  <option value="Other">Other Geospatial Requirement</option>
+                </select>
+                <div class="form-feedback" id="requiredService-feedback"></div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message" class="form-label">Scope of Survey &amp; Message <span
+                    class="required">*</span></label>
+                <textarea id="message" class="form-control"
+                  placeholder="Provide details such as route length, contour interval requirements, timeline, or tender specifications..."
+                  required></textarea>
+                <div class="form-feedback" id="message-feedback"></div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-accent" style="width: 100%;">
+              Submit Enquiry
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+
+            <p class="form-notice">
+              Note: This enquiry is validated client-side and saved into your browser's LocalStorage for review. No fake
+              API requests or spam emails are generated.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pune Interactive Map Section -->
+  <section class="map-section" id="location-map">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag dark">HEAD OFFICE LOCATION</span>
+        <h2 class="section-title light">Pune, Maharashtra</h2>
+        <p class="section-desc light">
+          Centrally located for rapid survey mobilization across Maharashtra, western and central India.
+        </p>
+      </div>
+
+      <div class="map-container-frame">
+        <div id="pune-map" aria-label="Interactive map of Pune, Maharashtra"></div>
+        <div class="map-fallback-overlay">
+          <div class="map-hud-box">
+            <div class="map-hud-city">Reliable Land Survey Consultancy</div>
+            <div style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 0.5rem;">Office: Pune, Maharashtra</div>
+            <div class="map-hud-coords">COORDINATES: 18.5204° N, 73.8567° E | DATUM: WGS84</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/new_logo.png" alt="Reliable Land Survey Consultancy" class="footer-logo">
+          <p class="footer-tagline">
+            Professional surveying and geospatial solutions for infrastructure projects in Pune, Maharashtra.
+          </p>
+          <div class="footer-tech-tag">PUNE, MAHARASHTRA • MAHESH DEHMUKH</div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About Us</a></li>
+            <li><a href="services.html" class="footer-nav-link">Services</a></li>
+            <li><a href="projects.html" class="footer-nav-link">Projects</a></li>
+            <li><a href="equipment.html" class="footer-nav-link">Technology</a></li>
+            <li><a href="methodology.html" class="footer-nav-link">Methodology</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Survey Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="services.html#topographical" class="footer-nav-link">Topographical Survey</a></li>
+            <li><a href="services.html#lidar-drone" class="footer-nav-link">LiDAR Drone Mapping</a></li>
+            <li><a href="services.html#total-station" class="footer-nav-link">Total Station Alignment</a></li>
+            <li><a href="services.html#dgps-gnss" class="footer-nav-link">DGPS / GNSS Baseline</a></li>
+            <li><a href="services.html#road-highway" class="footer-nav-link">Highway L &amp; Cross Sections</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Corporate Info</h4>
+          <div style="font-size: 0.9rem; color: #94a3b8; line-height: 1.7;">
+            <strong>Proprietor:</strong> MAHESH DESHMUKH<br>
+            <strong>Office:</strong> Pune, Maharashtra<br>
+            <strong>Verification:</strong> Contact us for details
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Reliable Land Survey Consultancy. All rights reserved.</div>
+        <div class="footer-coords">PUNE DATUM: 18°31'13.4"N 73°51'24.1"E</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog: Demo Submissions Inspector -->
+  <div class="modal-backdrop" id="enquiry-history-modal" role="dialog" aria-modal="true"
+    aria-labelledby="history-modal-title">
+    <div class="modal-dialog" style="max-width: 820px;">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag dark" style="margin-bottom: 0.25rem; font-size: 0.75rem;">LOCALSTORAGE DEMO
+            LOG</span>
+          <h3 class="modal-title" id="history-modal-title">Demo Survey Enquiries Stored Locally</h3>
+        </div>
+        <button class="modal-close-btn" id="history-modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 1.25rem;">
+          These entries are saved in your browser's <code
+            style="color: #00e5ff;">localStorage.getItem('rlsc_enquiries')</code> to verify frontend form functionality
+          without dummy network calls.
+        </p>
+
+        <div style="overflow-x: auto; max-height: 380px;">
+          <table class="tender-table" style="width: 100%;">
+            <thead>
+              <tr>
+                <th>Reference ID</th>
+                <th>Contact &amp; Company</th>
+                <th>Service &amp; Location</th>
+                <th>Logged At</th>
+              </tr>
+            </thead>
+            <tbody id="enquiry-history-tbody"></tbody>
+          </table>
+          <div id="enquiry-empty-notice"
+            style="text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; display: none;">
+            No demo submissions stored yet. Submit the form to see an entry here.
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="justify-content: space-between;">
+        <button class="btn btn-tech" id="history-clear-btn"
+          style="color: #ef4444; border-color: rgba(239, 68, 68, 0.4);">
+          Clear Demo Log
+        </button>
+        <button class="btn btn-secondary dark"
+          onclick="document.getElementById('enquiry-history-modal').classList.remove('active'); document.body.style.overflow='';">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>

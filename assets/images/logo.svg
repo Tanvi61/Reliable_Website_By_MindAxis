@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120" fill="none">
+  <defs>
+    <linearGradient id="rlsc-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="rlsc-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="rlsc-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0284c7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Survey Mark Emblem -->
+  <g transform="translate(10, 10)">
+    <!-- Tech Target Ring Outer -->
+    <circle cx="50" cy="50" r="46" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
+    <circle cx="50" cy="50" r="41" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <!-- Crosshairs & Coordinate ticks -->
+    <line x1="50" y1="2" x2="50" y2="18" stroke="#0ea5e9" stroke-width="2"/>
+    <line x1="50" y1="82" x2="50" y2="98" stroke="#0ea5e9" stroke-width="2"/>
+    <line x1="2" y1="50" x2="18" y2="50" stroke="#0ea5e9" stroke-width="2"/>
+    <line x1="82" y1="50" x2="98" y2="50" stroke="#0ea5e9" stroke-width="2"/>
+
+    <!-- Mountain contours base -->
+    <path d="M22 66 L38 48 L48 58 L62 42 L78 66 Z" fill="#0284c7" opacity="0.25"/>
+    <path d="M26 66 L40 52 L50 62 L60 48 L74 66 Z" fill="#0369a1" opacity="0.4"/>
+    <path d="M30 66 L42 55 L48 61 L58 50 L70 66 Z" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+
+    <!-- Stylized Modern 'R' in Vibrant Survey Orange -->
+    <path d="M38 30 H55 C64 30 68 34 68 41 C68 47 63 51 56 52 L69 70 H58 L47 54 H44 V70 H38 V30 Z M44 36 V48 H54 C58 48 61 46 61 41 C61 37 58 36 54 36 H44 Z" fill="url(#rlsc-accent)"/>
+    
+    <!-- Drone Quadcopter overhead silhouette -->
+    <g transform="translate(50, 22) scale(0.65)" stroke="#0f172a" stroke-width="2" fill="none">
+      <line x1="-20" y1="0" x2="20" y2="0" stroke-width="2.5"/>
+      <line x1="-16" y1="-8" x2="16" y2="8" stroke-width="1.5"/>
+      <line x1="-16" y1="8" x2="16" y2="-8" stroke-width="1.5"/>
+      <!-- Rotor discs -->
+      <circle cx="-18" cy="-8" r="4" fill="#0ea5e9" stroke="#0369a1"/>
+      <circle cx="18" cy="-8" r="4" fill="#0ea5e9" stroke="#0369a1"/>
+      <circle cx="-18" cy="8" r="4" fill="#0ea5e9" stroke="#0369a1"/>
+      <circle cx="18" cy="8" r="4" fill="#0ea5e9" stroke="#0369a1"/>
+      <!-- Sensor Pod -->
+      <circle cx="0" cy="0" r="3.5" fill="#f97316"/>
+    </g>
+
+    <!-- Total Station Mini silhouette Left -->
+    <path d="M22 70 L28 55 L34 70 M28 55 V50 H26 V46 H30 V50 H28" stroke="#0284c7" stroke-width="1.2" fill="none"/>
+    <!-- GNSS Antenna Mini silhouette Right -->
+    <path d="M66 70 L72 55 L78 70 M72 55 V47 M69 47 H75 V45 C75 43 69 43 69 45 Z" stroke="#0284c7" stroke-width="1.2" fill="none"/>
+    
+    <!-- Survey Coordinate Datum point center -->
+    <circle cx="50" cy="50" r="1.5" fill="#f97316"/>
+  </g>
+
+  <!-- Typography: RELIABLE LAND SURVEY CONSULTANCY -->
+  <g transform="translate(125, 20)">
+    <!-- RELIABLE -->
+    <text x="0" y="34" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="34" font-weight="900" fill="#0f172a" letter-spacing="2">RELIABLE</text>
+    
+    <!-- LAND SURVEY -->
+    <text x="2" y="60" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0284c7" letter-spacing="5">LAND SURVEY</text>
+    
+    <!-- CONSULTANCY with technical flank lines -->
+    <line x1="2" y1="76" x2="70" y2="76" stroke="#f97316" stroke-width="2"/>
+    <text x="80" y="80" font-family="'JetBrains Mono', 'Inter', monospace" font-size="12" font-weight="700" fill="#475569" letter-spacing="4">CONSULTANCY</text>
+    <line x1="235" y1="76" x2="310" y2="76" stroke="#f97316" stroke-width="2"/>
+
+    <!-- Pune Maharashtra tag -->
+    <text x="325" y="80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#0284c7" letter-spacing="1">PUNE • MH</text>
+  </g>
+</svg>

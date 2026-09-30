@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <linearGradient id="mark-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle for favicon/app icon -->
+  <rect width="100" height="100" rx="20" fill="#0b1320"/>
+  <!-- Tech Target Ring Outer -->
+  <circle cx="50" cy="50" r="42" stroke="#0ea5e9" stroke-width="1.8" stroke-dasharray="4 3" opacity="0.7"/>
+  
+  <!-- Crosshairs -->
+  <line x1="50" y1="4" x2="50" y2="16" stroke="#0ea5e9" stroke-width="2"/>
+  <line x1="50" y1="84" x2="50" y2="96" stroke="#0ea5e9" stroke-width="2"/>
+  <line x1="4" y1="50" x2="16" y2="50" stroke="#0ea5e9" stroke-width="2"/>
+  <line x1="84" y1="50" x2="96" y2="50" stroke="#0ea5e9" stroke-width="2"/>
+
+  <!-- Mountain contours base -->
+  <path d="M22 66 L38 48 L48 58 L62 42 L78 66 Z" fill="#0284c7" opacity="0.35"/>
+  <path d="M26 66 L40 52 L50 62 L60 48 L74 66 Z" fill="#0369a1" opacity="0.5"/>
+  <path d="M30 66 L42 55 L48 61 L58 50 L70 66 Z" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+
+  <!-- Stylized Modern 'R' in Vibrant Survey Orange -->
+  <path d="M38 30 H55 C64 30 68 34 68 41 C68 47 63 51 56 52 L69 70 H58 L47 54 H44 V70 H38 V30 Z M44 36 V48 H54 C58 48 61 46 61 41 C61 37 58 36 54 36 H44 Z" fill="url(#mark-accent)"/>
+  
+  <!-- Drone Quadcopter overhead silhouette -->
+  <g transform="translate(50, 22) scale(0.65)" stroke="#38bdf8" stroke-width="2" fill="none">
+    <line x1="-20" y1="0" x2="20" y2="0" stroke-width="2.5"/>
+    <circle cx="-18" cy="-8" r="3.5" fill="#38bdf8"/>
+    <circle cx="18" cy="-8" r="3.5" fill="#38bdf8"/>
+    <circle cx="-18" cy="8" r="3.5" fill="#38bdf8"/>
+    <circle cx="18" cy="8" r="3.5" fill="#38bdf8"/>
+    <circle cx="0" cy="0" r="3" fill="#f97316"/>
+  </g>
+</svg>
